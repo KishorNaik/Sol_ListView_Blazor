@@ -1,0 +1,21 @@
+﻿@if (this.PersonList != null)
+{
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ListView TItem="PersonModel" ItemSource="this.PersonList" Context="personModelObj">
+                    <DataTemplate>
+                        <div>
+                            <h1>@personModelObj.FirstName</h1>
+                            <h2>@personModelObj.LastName</h2>
+                        </div>
+                    </DataTemplate>
+                </ListView>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <h1>Loading...</h1>
+}

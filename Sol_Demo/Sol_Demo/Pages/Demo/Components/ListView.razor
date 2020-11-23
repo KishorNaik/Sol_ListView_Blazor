@@ -1,0 +1,13 @@
+﻿@typeparam TItem
+
+<ul>
+    @foreach (var data in this.ItemSource)
+    {
+        <li>
+            <div class="alert alert-info">
+                @DataTemplate(data)
+            </div>
+        </li>
+
+    }
+</ul>

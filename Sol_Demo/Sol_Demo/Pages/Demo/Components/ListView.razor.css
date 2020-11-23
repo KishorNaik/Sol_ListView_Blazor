@@ -1,0 +1,9 @@
+﻿ul {
+    list-style-type: none
+}
+
+li:before {
+    content: "-  ";
+    color: red;
+    font-size: 36px;
+}
